@@ -357,13 +357,13 @@ function system_requirements($phase) {
         $requirements['file system']['severity'] = REQUIREMENT_ERROR;
       }
     }
-    else {
+    /*else {
       if (file_default_scheme() == 'public') {
         $requirements['file system']['value'] = $t('Writable (<em>public</em> download method)');
       }
       else {
         $requirements['file system']['value'] = $t('Writable (<em>private</em> download method)');
-      }
+      }*/
     }
   }
 
