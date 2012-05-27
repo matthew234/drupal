@@ -324,7 +324,7 @@ function system_requirements($phase) {
 
   $error = '';
   // For installer, create the directories if possible.
-  foreach ($directories as $directory) {
+  /*foreach ($directories as $directory) {
     if (!$directory) {
       continue;
     }
@@ -341,7 +341,7 @@ function system_requirements($phase) {
       }
       else {
         $error .= $t('The directory %directory is not writable.', array('%directory' => $directory)) . ' ';
-      }
+      }*/
       // The files directory requirement check is done only during install and runtime.
       if ($phase == 'runtime') {
         $description = $error . $t('You may need to set the correct directory at the <a href="@admin-file-system">file system settings page</a> or change the current directory\'s permissions so that it is writable.', array('@admin-file-system' => url('admin/config/media/file-system')));
