@@ -324,7 +324,7 @@ function system_requirements($phase) {
 
   $error = '';
   // For installer, create the directories if possible.
-  /*foreach ($directories as $directory) {
+  foreach ($directories as $directory) {
     if (!$directory) {
       continue;
     }
@@ -364,7 +364,7 @@ function system_requirements($phase) {
       else {
         $requirements['file system']['value'] = $t('Writable (<em>private</em> download method)');
       }
-    }*/
+    }
   }
 
   // See if updates are available in update.php.
